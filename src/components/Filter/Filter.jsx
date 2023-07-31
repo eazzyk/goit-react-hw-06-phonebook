@@ -1,5 +1,4 @@
 import { useContacts } from 'hooks/useContacts';
-import PropTypes from 'prop-types';
 import css from './Filter.module.css';
 
 function Filter() {
@@ -20,10 +19,5 @@ function Filter() {
     </div>
   );
 }
-
-Filter.propTypes = {
-  value: PropTypes.string.isRequired,
-  onChange: PropTypes.func.isRequired,
-};
 
 export default Filter;

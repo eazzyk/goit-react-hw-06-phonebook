@@ -23,6 +23,7 @@ const ContactForm = () => {
         return;
     }
   };
+
   const handleSubmit = event => {
     event.preventDefault();
     if (name.trim() === '' || number.trim() === '') {

@@ -1,6 +1,5 @@
 import { useContacts } from 'hooks/useContacts';
 import css from './ContactList.module.css';
-// import PropTypes from 'prop-types';
 
 const ContactList = () => {
   const { filteredContacts, removeContact } = useContacts();
@@ -24,16 +23,5 @@ const ContactList = () => {
     </ul>
   );
 };
-
-// ContactList.propTypes = {
-//   contacts: PropTypes.arrayOf(
-//     PropTypes.shape({
-//       id: PropTypes.string.isRequired,
-//       name: PropTypes.string.isRequired,
-//       number: PropTypes.string.isRequired,
-//     })
-//   ),
-//   onRemoveContact: PropTypes.func.isRequired,
-// };
 
 export default ContactList;
